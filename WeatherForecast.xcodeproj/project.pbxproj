@@ -8,11 +8,25 @@
 
 /* Begin PBXFileReference section */
 		4DA7EFC72FBF65390007360E /* WeatherForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA7F0B42FC2745C0007360E /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4DA7F0B62FC2759E0007360E /* Exceptions for "WeatherForecast" folder in "WeatherForecast" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4DA7EFC62FBF65390007360E /* WeatherForecast */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4DA7EFC92FBF65390007360E /* WeatherForecast */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4DA7F0B62FC2759E0007360E /* Exceptions for "WeatherForecast" folder in "WeatherForecast" target */,
+			);
 			path = WeatherForecast;
 			sourceTree = "<group>";
 		};
@@ -32,6 +46,7 @@
 		4DA7EFBE2FBF65390007360E = {
 			isa = PBXGroup;
 			children = (
+				4DA7F0B42FC2745C0007360E /* Config.xcconfig */,
 				4DA7EFC92FBF65390007360E /* WeatherForecast */,
 				4DA7EFC82FBF65390007360E /* Products */,
 			);
@@ -127,6 +142,7 @@
 /* Begin XCBuildConfiguration section */
 		4DA7EFD02FBF653B0007360E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA7F0B42FC2745C0007360E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -190,6 +206,7 @@
 		};
 		4DA7EFD12FBF653B0007360E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA7F0B42FC2745C0007360E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -246,6 +263,7 @@
 		};
 		4DA7EFD32FBF653B0007360E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA7F0B42FC2745C0007360E /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -253,6 +271,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherForecast/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -277,6 +297,7 @@
 		};
 		4DA7EFD42FBF653B0007360E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA7F0B42FC2745C0007360E /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -284,6 +305,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherForecast/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
