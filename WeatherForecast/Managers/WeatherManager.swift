@@ -12,11 +12,6 @@ class WeatherManager {
     
     private let API_KEY = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String ?? ""
     
-    //"https://api.openweathermap.org/data/3.0/onecall?lat=\(latitude)&lon=\(longitude)&exclude={part}&appid=\(API_KEY)&units=metric")
-    
-    // "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=\(API_KEY)")
-    
-    /// // HTTP request to get the current weather depending on the coordinates we got from LocationManager
     func getCurrentWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees) async throws -> ResponseBody {
         guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(API_KEY)&units=metric")
         else {
